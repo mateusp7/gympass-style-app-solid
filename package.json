@@ -1,7 +1,7 @@
 {
   "name": "api-solid",
   "version": "1.0.0",
-  "description": "- [ ] Deve ser possível se cadastrar;\r - [ ] Deve ser possível se autenticar;\r - [ ] Deve ser possível obter o perfil de um usuário logado;\r - [ ] Deve ser possível obter o número de check-ins realizados por um usuário logado;\r - [ ] Deve ser possível o usuário obter o seu histórico de check-ins;\r - [ ] Deve ser possível o usuário buscar academias próximas;\r - [ ] Deve ser possível o usuário buscar academias pelo nome;\r - [ ] Deve ser possível o usuário realizar check-in em uma academia;\r - [ ] Deve ser possível validar o check-in de um usuário;\r - [ ] Deve ser possível cadastrar uma academia;",
+  "description": "GYM API",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
@@ -11,7 +11,9 @@
     "migrate:deploy": "prisma migrate deploy",
     "studio": "prisma studio",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,8 @@
   "devDependencies": {
     "@types/bcryptjs": "2.4.6",
     "@types/node": "22.5.1",
+    "@vitest/coverage-v8": "2.1.2",
+    "@vitest/ui": "2.1.2",
     "prisma": "5.19.1",
     "tsup": "8.2.4",
     "tsx": "4.19.0",
